@@ -1,0 +1,46 @@
+.social-icons a {
+    font-size: 2.5rem; 
+    margin: 0 15px;
+    color: #7b0000;
+    text-decoration: none;
+    transition: color 0.3s ease; 
+}
+
+.social-icons a:hover {
+    color: #98fc1d;
+}
+
+.gallery-img {
+    width: 100%; 
+    height: 250px;
+    object-fit: cover; 
+    border-radius: 8px; 
+    transition: transform 0.3s ease; 
+    transform: scale(1);
+}
+
+/* ¡NUEVO! Efecto al pasar el cursor */
+.gallery-img:hover {
+    transform: scale(1.05); /* Agranda la imagen un 5% */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Sombra más pronunciada al agrandar */
+    z-index: 1; /* Asegura que la imagen agrandada esté por encima de las demás */
+    position: relative; /* Necesario para que z-index funcione */
+}
+
+.section-spacing {
+    margin-bottom: 4rem; /* Espacio entre las secciones principales */
+}
+
+/* Estilos para el logo en la navbar */
+.logito {
+    height: 40px; /* Altura deseada para tu logo */
+    width: auto; /* Mantiene la proporción de la imagen */
+    margin-right: 15px; /* Espacio a la derecha del logo */
+    vertical-align: middle; 
+}
+
+/* Asegurar que el navbar-brand contenga el logo y texto alineados */
+.navbar-brand {
+    display: flex; /* Usa flexbox para alinear el logo y el texto */
+    align-items: center; /* Centra verticalmente los elementos */
+}
