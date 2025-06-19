@@ -3,93 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miembros del Centro - Centro De Estudiantes</title>
+    <title>Miembros del Centro - Centro De Estudiantes CHN37</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="../Styles/styles.css">
-    <link rel="icon" href="../Resource/Sin título.png" type="image/png">
+    <link rel="stylesheet" href="../Styles/styles.css"> 
+    <link rel="stylesheet" href="../Styles/miembros.css"> <link rel="icon" href="../Resource/Sin título.png" type="image/png">
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="container">
-            <img src="../Resource/Sin título.png" class="logito" alt="Logo Centro de Estudiantes CHN37">
-            <a class="navbar-brand text-white" href="../index.html">
-                BIENVENIDOS AL CENTRO DE ESTUDIANTES 
-                <span class="text-white-50">CHN37</span>
-            </a>
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <header class="bg-primary text-white py-3 text-center">
+        <div class="container d-flex flex-column align-items-center">
+            <img src="../Resource/Sin título.png" alt="Logo Centro de Estudiantes CHN37" class="img-fluid" style="height:100px;">
+            <h1 class="mt-2 mb-1">¡BIENVENIDOS AL CENTRO DE ESTUDIANTES!</h1>
+            <p class="lead mb-0">¡No dudes en hablar con nuestro equipo!</p>
+        </div>
+    </header>
 
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span> Menú
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="./Contactos.html">Contactos</a>
+                        <a class="nav-link" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="./miembros-centro.html">Miembros del centro</a>
+                        <a class="nav-link" href="./Contactos.html">Contactos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Consultas.html">Preguntas Frecuentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./miembros.html">Miembros del centro</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="container py-5">
-        <h1 class="text-center mb-4">Miembros del Centro</h1>
-        <p class="lead text-center mb-5">Conoce a las personas que hacen posible el Centro de Estudiantes CHN37.</p>
-        
+    <main class="container my-5">
+        <h1 class="text-center mb-5 display-4">Conoce a Nuestro Equipo</h1>
+        <p class="lead text-center mb-5">
+            Detrás del Centro de Estudiantes hay un grupo de alumnos comprometidos trabajando por y para vos. ¡Conócelos!
+        </p>
+
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
+            
             <div class="col">
-                <div class="card h-100 shadow-sm">
-                     <img src="https://via.placeholder.com/150x150/808080/FFFFFF?text=Foto" class="card-img-top mx-auto mt-3" alt="Foto de Juan Pérez" style="width: 150px; height: 150px; object-fit: cover;">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Juan Pérez</h5>
-                        <p class="card-text text-muted">Presidente</p>
+                <div class="card h-100 text-center shadow-lg border-0">
+                    <img src="../Resource/Messi.jpg" class="card-img-top rounded-circle mx-auto mt-4 member-img" alt="Presidenta del Centro">
+                    <div class="card-body">
+                        <h3 class="card-title">Lionel Andres Messi</h3>
+                        <p class="card-text text-primary fw-bold">Presidente del Centro</p>
+                        <p class="card-text text-muted small">
+                            Lidera la dirección y coordinación general de todas las actividades del Centro. Su visión y energía impulsan nuestras iniciativas. Siempre abierta a escuchar nuevas ideas.
                     </div>
                 </div>
             </div>
+
             <div class="col">
-                <div class="card h-100 shadow-sm">
-                     <img src="https://via.placeholder.com/150x150/808080/FFFFFF?text=Foto" class="card-img-top mx-auto mt-3" alt="Foto de Juan Pérez" style="width: 150px; height: 150px; object-fit: cover;">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">María González</h5>
-                        <p class="card-text text-muted">Secretaria</p>
+                <div class="card h-100 text-center shadow-lg border-0">
+                    <img src="../Resource/Momo.jpg" class="card-img-top rounded-circle mx-auto mt-4 member-img" alt="Secretario General">
+                    <div class="card-body">
+                        <h3 class="card-title">Geronimo Benavidez</h3>
+                        <p class="card-text text-primary fw-bold">Secretario General</p>
+                        <p class="card-text text-muted small">
+                            Es el pilar de nuestra comunicación y organización interna. Se encarga de la agenda, las actas y de asegurar que todos los mensajes lleguen a la comunidad. Nunca van a faltar sus 5 cafeteras
+                        </p>
                     </div>
                 </div>
             </div>
+
             <div class="col">
-                <div class="card h-100 shadow-sm">
-                     <img src="https://via.placeholder.com/150x150/808080/FFFFFF?text=Foto" class="card-img-top mx-auto mt-3" alt="Foto de Juan Pérez" style="width: 150px; height: 150px; object-fit: cover;">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Carlos Rodríguez</h5>
-                        <p class="card-text text-muted">Tesorero</p>
+                <div class="card h-100 text-center shadow-lg border-0">
+                    <img src="../Resource/Lali.webp" class="card-img-top rounded-circle mx-auto mt-4 member-img" alt="Tesorera">
+                    <div class="card-body">
+                        <h3 class="card-title">Mariana Esposito</h3>
+                        <p class="card-text text-primary fw-bold">Tesorera</p>
+                        <p class="card-text text-muted small">
+                        Encargada de administrar todo gastos que tenga el centro de estudiantes, estos gastos pueden ser como en torneos, mejoras de baños, pintado o decoracion del patio, Etc.
+                        </p>
                     </div>
                 </div>
             </div>
+
             <div class="col">
-                <div class="card h-100 shadow-sm">
-                     <img src="https://via.placeholder.com/150x150/808080/FFFFFF?text=Foto" class="card-img-top mx-auto mt-3" alt="Foto de Juan Pérez" style="width: 150px; height: 150px; object-fit: cover;">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Laura M.</h5>
-                        <p class="card-text text-muted">Vocal</p>
+                <div class="card h-100 text-center shadow-lg border-0">
+                    <img src="../Resource/Adorni.webp" class="card-img-top rounded-circle mx-auto mt-4 member-img" alt="Vocero">
+                    <div class="card-body">
+                        <h3 class="card-title">Manuel Adorni</h3>
+                        <p class="card-text text-primary fw-bold">Vocero General</p>
+                        <p class="card-text text-muted small">
+                            Encargado de comunicarnos cada accion o los planes del Centro de estudiantes. Informa todo lo que sucede y tambien se encarga de comunicarse con los profesores.
+                        </p>
                     </div>
                 </div>
             </div>
+
             <div class="col">
-                <div class="card">
-                     <img src="https://via.placeholder.com/150x150/808080/FFFFFF?text=Foto" class="card-img-top mx-auto mt-3" alt="Foto de Juan Pérez" style="width: 150px; height: 150px; object-fit: cover;">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Pedro G.</h5>
-                        <p class="card-text text-muted">Vocal</p>
+                <div class="card h-100 text-center shadow-lg border-0">
+                    <img src="../Resource/Cofla.jpg" class="card-img-top rounded-circle mx-auto mt-4 member-img" alt="Encargado de Areas Recreativas">
+                    <div class="card-body">
+                        <h3 class="card-title">Tomas Deffi</h3>
+                        <p class="card-text text-primary fw-bold">Encargado de Area Recreativa</p>
+                        <p class="card-text text-muted small">
+                        El exJugador de futbol se encarga del area recreativa, pueden ser tanto torneos de futbol, truco, handbol, etc.    
+                        </p>
                     </div>
                 </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 text-center shadow-lg border-0">
+                    <img src="../Resource/Hernan Drago.webp" class="card-img-top rounded-circle mx-auto mt-4 member-img" alt="Encargado area Arte">
+                    <div class="card-body">
+                        <h3 class="card-title">Hernan Drago</h3>
+                        <p class="card-text text-primary fw-bold">Encargado de area de Arte</p>
+                        <p class="card-text text-muted small">
+                        Encargado de las areas artisticas, tanto como danzas, teatrales y hasta pinturas. El experto en moda acompañara a todos aquellos que quieran adentrarse en el mundo del arte.    
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-md-auto mb-3">
+                    <h5 class="text-white">Síguenos</h5>
+                    <ul class="list-unstyled d-flex justify-content-center justify-content-md-start social-icons-footer">
+                        <li class="me-3"><a href="https://www.instagram.com/cehn37/" target="_blank" aria-label="Instagram" class="text-white"><i class="bi bi-instagram fs-4"></i></a></li>
+                        <li class="me-3"><a href="https://www.facebook.com/samuel.serrano.313" target="_blank" aria-label="Facebook" class="text-white"><i class="bi bi-facebook fs-4"></i></a></li>
+                        <li class="me-3"><a href="https://x.com/serranoosamuel" target="_blank" aria-label="Twitter/X" class="text-white"><i class="bi bi-twitter-x fs-4"></i></a></li>
+                        <li><a href="https://www.youtube.com/@SerranooSamuel-Gaming" target="_blank" aria-label="YouTube" class="text-white"><i class="bi bi-youtube fs-4"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-auto mb-3 text-md-end">
+                    <h5 class="text-white">Información de Contacto</h5>
+                    <p class="text-white-50 mb-1"><i class="bi bi-envelope-fill me-2"></i>Email: centro.estudiantes.chn37@gmail.com</p>
+                    <p class="text-white-50 mb-1"><i class="bi bi-whatsapp me-2"></i>WhatsApp: +54 9 11 - 6406-9777</p>
+                    <p class="text-white-50 mb-0"><i class="bi bi-geo-alt-fill me-2"></i>Pergamino 211, Buenos Aires, Argentina</p>
+                </div>
+            </div>
+            <div class="text-center border-top border-secondary pt-3 mt-3">
+                <p class="text-white-50 mb-0">© 2025 Centro de Estudiantes CHN37. Todos los derechos reservados.</p>
             </div>
         </div>
+    </footer>
 
-    </div> 
-    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="../script.js"></script>
 </body>

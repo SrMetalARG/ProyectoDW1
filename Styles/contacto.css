@@ -1,0 +1,174 @@
+/* Styles/contactos.css */
+
+/* --- ESTILOS GENERALES DE LA PÁGINA DE CONTACTO --- */
+
+/* Asegura que el área principal de contenido de Contactos se alinee con el diseño general */
+.container.my-5 {
+    background-color: #fff; /* Fondo blanco para la tarjeta de contacto */
+    padding: 30px !important; /* ¡Importante para sobrescribir los valores predeterminados de Bootstrap! */
+    border-radius: 8px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra suave para el contenedor */
+    max-width: 800px; /* Limita el ancho para una mejor legibilidad */
+}
+
+/* Estilo para el título principal de la página */
+.container.my-5 h1 {
+    color: #1a4805; /* Verde oscuro para el título principal, consistente con tu borde de navegación */
+    font-size: 2.8rem;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+/* Estilo para el párrafo introductorio */
+.container.my-5 > p { /* Apunta al párrafo hijo directo para evitar afectar los párrafos de la lista */
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* --- ESTILOS PARA LA NUEVA LISTA DE PÁRRAFOS --- */
+/* Agregaste un <li> directo con etiquetas <p> dentro. Vamos a darle estilo. */
+.container.my-5 > li { /* Apunta al hijo <li> directo del contenedor */
+    list-style: none; /* Quita el punto de viñeta predeterminado */
+    padding: 0;
+    margin-bottom: 30px; /* Espacio debajo de esta lista */
+}
+
+.container.my-5 > li p {
+    background-color: #f8f8f8; /* Un fondo gris muy claro para cada elemento de párrafo */
+    border-left: 5px solid #007858; /* Barra de acento verde a la izquierda */
+    padding: 10px 15px;
+    margin-bottom: 10px; /* Espacio entre párrafos en esta lista */
+    border-radius: 4px;
+    color: #444;
+    font-size: 1.05rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.container.my-5 > li p:last-child {
+    margin-bottom: 0; /* Sin margen inferior para el último párrafo de la lista */
+}
+
+
+/* --- ESTILOS PARA LA LISTA DE INFORMACIÓN DE CONTACTO (ul.list-group) --- */
+
+.list-group {
+    border: none; /* Elimina el borde predeterminado de Bootstrap para el grupo de lista */
+    margin-bottom: 40px;
+}
+
+/* Estilos para elementos individuales de contacto (li.items) */
+.list-group-flush .items {
+    background-color: transparent; /* Sin fondo para los elementos de la lista */
+    border-bottom: 1px dashed #ccc; /* Separador discontinuo para los elementos */
+    padding: 15px 0; /* Relleno vertical */
+    display: flex; /* Usa flexbox para la alineación */
+    align-items: center;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.list-group-flush .items:last-child {
+    border-bottom: none; /* Sin borde para el último elemento */
+}
+
+/* Estilo para el texto fuerte (etiqueta) dentro de los elementos de contacto */
+.list-group-flush .items strong {
+    color: #111; /* Color más oscuro para las etiquetas */
+    min-width: 150px; /* Asegura que las etiquetas se alineen */
+    margin-right: 15px;
+}
+
+/* Estilo para los enlaces de contacto (correo electrónico) */
+.list-group-flush .items a {
+    color: #007858; /* Verde para los enlaces, consistente con tu barra de navegación */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.list-group-flush .items a:hover {
+    color: #ce4444; /* Acento rojo al pasar el ratón, como se ve en tu navegación principal */
+    text-decoration: underline;
+}
+
+/* --- ESTILOS DE LA SECCIÓN DE REDES SOCIALES --- */
+
+/* Estilo para el título "Redes Sociales" */
+h4 {
+    color: #1a4805; /* Verde oscuro para el título de redes sociales */
+    font-size: 1.8rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Contenedor para los íconos de redes sociales */
+.social-icons {
+    display: flex;
+    justify-content: center; /* Centra los íconos */
+    gap: 25px; /* Espacio entre íconos */
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/* Enlaces individuales de íconos de redes sociales */
+.social-icons a {
+    color: #333; /* Gris oscuro para los íconos por defecto */
+    font-size: 3rem; /* Íconos grandes */
+    transition: color 0.3s ease, transform 0.2s ease;
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+}
+
+.social-icons a:hover {
+    color: #ce4444; /* Acento rojo al pasar el ratón */
+    transform: translateY(-5px); /* Efecto de elevación ligera */
+}
+
+/* --- AJUSTES RESPONSIVOS --- */
+
+@media (max-width: 768px) {
+    .container.my-5 {
+        padding: 20px !important;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .container.my-5 h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .container.my-5 > p {
+        font-size: 1rem;
+    }
+
+    .container.my-5 > li p {
+        font-size: 0.95rem;
+        padding: 8px 12px;
+    }
+
+    .list-group-flush .items {
+        flex-direction: column; /* Apila la etiqueta y el valor verticalmente en pantallas pequeñas */
+        align-items: flex-start; /* Alinea el texto a la izquierda */
+        padding: 10px 0;
+        font-size: 1rem;
+    }
+
+    .list-group-flush .items strong {
+        min-width: auto;
+        margin-right: 0;
+        margin-bottom: 5px; /* Espacio entre la etiqueta y el valor */
+    }
+
+    h4 {
+        font-size: 1.5rem;
+        margin-top: 30px;
+    }
+
+    .social-icons a {
+        font-size: 2.5rem; /* Íconos más pequeños en dispositivos móviles */
+        gap: 15px;
+    }
+}

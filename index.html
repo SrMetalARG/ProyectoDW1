@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centro De Estudiantes</title>
+    <title>Centro De Estudiantes CHN37</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="Styles/styles.css">
@@ -11,83 +11,162 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="container" href="../index.html">
-            <img src="./Assets/Sin título.png" class="logito" alt="Logo Centro de Estudiantes CHN37">
-            <a class="navbar-brand text-white" href="./index.html">
-                BIENVENIDOS AL CENTRO DE ESTUDIANTES 
-                <span class="text-white-50">CHN37</span>
-            </a>
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <header class="bg-primary text-white py-3 text-center">
+        <div class="container d-flex flex-column align-items-center">
+            <img src="Resource/Sin título.png" alt="Logo Centro de Estudiantes CHN37" class="img-fluid" style="height:100px;">
+            <h1 class="mt-2 mb-1">¡BIENVENIDOS AL CENTRO DE ESTUDIANTES! </h1>
+            <p class="lead mb-0">¡No dudes en hablar con nuestro equipo!</p>
+        </div>
+    </header>
 
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span> Menú
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link text-white" aria-current="page" href="./Paginas/Contactos.html">Contactos</a>
+                        <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="./Paginas/miembros.html">Miembros del centro</a>
+                        <a class="nav-link" href="./Paginas/Contactos.html">Contactos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Paginas/Consultas.html">Preguntas Frecuentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Paginas/miembros.html">Miembros del centro</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="container text-center py-5">
-        <p class="lead mb-5 mt-3">
-            ¡Hola a todos! Este es el espacio oficial del **Centro de Estudiantes CHN37**. 
-            Aquí encontrarás información relevante sobre nuestras actividades, eventos y cómo contactarnos.
-            ¡Te invitamos a explorar!
-        </p>
-
-        ---
-
-        <section class="social-media-section section-spacing">
-            <h3 class="mb-4">Síguenos en nuestras Redes Sociales</h3>
-            <div class="social-icons">
-                <a href="https://www.instagram.com/cehn37/" target="_blank" aria-label="Instagram">
-                    <i class="bi bi-instagram"></i>
-                </a>
-                <a href="https://www.facebook.com/samuel.serrano.313" target="_blank" aria-label="Facebook">
-                    <i class="bi bi-facebook"></i>
-                </a>
-                <a href="https://x.com/serranoosamuel" target="_blank" aria-label="Twitter/X">
-                    <i class="bi bi-twitter"></i>
-                </a>
-                <a href="https://www.youtube.com/@SerranooSamuel-Gaming" target="_blank" aria-label="YouTube">
-                    <i class="bi bi-youtube"></i>
-                </a>
+    <main class="container my-5">
+        <section id="slider" class="mb-5">
+            <div id="carouselExampleAutoplay" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="8000">
+                <div class="carousel-inner rounded shadow-lg">
+                    <div class="carousel-item active">
+                        <img src="Resource/Fotografia.jpg" class="d-block w-100 carousel-img-fixed-height" alt="Estudiantes en el centro">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 p-3 rounded">
+                            <h5>¡Representando a los Estudiantes!</h5>
+                            <p>Trabajamos para mejorar la experiencia educativa de todos.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Resource/torneoV.jpg" class="d-block w-100 carousel-img-fixed-height" alt="Torneo deportivo">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 p-3 rounded">
+                            <h5>Eventos y Actividades</h5>
+                            <p>Organizamos torneos, talleres y mucho más para la comunidad.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Resource/Fotografia2.jpg" class="d-block w-100 carousel-img-fixed-height" alt="Reunión del centro">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 p-3 rounded">
+                            <h5>Un equipo comprometido</h5>
+                            <p>Siempre buscando nuevas formas de apoyarte y escucharte.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplay" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplay" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleAutoplay" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleAutoplay" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleAutoplay" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
             </div>
         </section>
 
-        ---
-    <header>
-        <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="./Resource/Fotografia.jpg" class="data-bs-slide w-10" alt="...">
+        <hr class="my-5">
+
+        <section id="nosotros" class="text-center py-5">
+            <h2 class="display-4 mb-4">¿Quiénes Somos?</h2>
+            <p class="lead col-lg-8 mx-auto">
+                Somos el **Centro de Estudiantes CHN37**, un grupo de alumnos comprometidos con el bienestar y los derechos de la comunidad estudiantil. Nuestra misión es ser un puente entre los estudiantes y la institución, organizando actividades, gestionando consultas y promoviendo un ambiente de estudio y convivencia óptimo. ¡Trabajamos por y para vos!
+            </p>
+        </section>
+
+        <hr class="my-5">
+
+        <section id="propuestas" class="py-5">
+            <h2 class="text-center display-4 mb-5">Nuestras Propuestas Principales</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-primary">
+                        <div class="card-body text-center">
+                            <i class="bi bi-lightbulb-fill text-primary fs-1 mb-3"></i>
+                            <h3 class="card-title">Mejora de Instalaciones</h3>
+                            <p class="card-text">Gestionamos mejoras en aulas, espacios comunes y recursos tecnológicos para un mejor aprendizaje.</p>
+                            <a href="#" class="btn btn-outline-primary">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-primary">
+                        <div class="card-body text-center">
+                            <i class="bi bi-calendar-event-fill text-primary fs-1 mb-3"></i>
+                            <h3 class="card-title">Eventos Recreativos y Culturales</h3>
+                            <p class="card-text">Organizamos torneos, talleres, charlas y actividades culturales para el disfrute de todos.</p>
+                            <a href="#" class="btn btn-outline-primary">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-primary">
+                        <div class="card-body text-center">
+                            <i class="bi bi-chat-dots-fill text-primary fs-1 mb-3"></i>
+                            <h3 class="card-title">Canales de Comunicación</h3>
+                            <p class="card-text">Establecemos y mantenemos abiertos canales efectivos para tus dudas, sugerencias y quejas.</p>
+                            <a href="#" class="btn btn-outline-primary">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-primary">
+                        <div class="card-body text-center">
+                            <i class="bi bi-book-half text-primary fs-1 mb-3"></i>
+                            <h3 class="card-title">Apoyo Académico</h3>
+                            <p class="card-text">Promovemos tutorías, grupos de estudio y recursos para el éxito académico de los estudiantes.</p>
+                            <a href="#" class="btn btn-outline-primary">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="carousel-item">
-                <img src="./Resource/torneoV.jpg" class="data-bs-slide w-10" alt="...">
+        </section>
+
+        <hr class="my-5">
+        
+    </main>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row justify-content-between align-items-center"> <div class="col-md-auto mb-3"> <h5 class="text-white">Síguenos</h5>
+                    <ul class="list-unstyled d-flex justify-content-center justify-content-md-start social-icons-footer">
+                        <li class="me-3"><a href="https://www.instagram.com/cehn37/" target="_blank" aria-label="Instagram" class="text-white"><i class="bi bi-instagram fs-4"></i></a></li>
+                        <li class="me-3"><a href="https://www.facebook.com/samuel.serrano.313" target="_blank" aria-label="Facebook" class="text-white"><i class="bi bi-facebook fs-4"></i></a></li>
+                        <li class="me-3"><a href="https://x.com/serranoosamuel" target="_blank" aria-label="Twitter/X" class="text-white"><i class="bi bi-twitter-x fs-4"></i></a></li> <li><a href="https://www.youtube.com/@SerranooSamuel-Gaming" target="_blank" aria-label="YouTube" class="text-white"><i class="bi bi-youtube fs-4"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-auto mb-3 text-md-end"> <h5 class="text-white">Información de Contacto</h5>
+                    <p class="text-white-50 mb-1"><i class="bi bi-envelope-fill me-2"></i>Email: centro.estudiantes.chn37@gmail.com</p>
+                    <p class="text-white-50 mb-1"><i class="bi bi-whatsapp me-2"></i>WhatsApp: +54 9 11 - 6406-9777</p>
+                    <p class="text-white-50 mb-0"><i class="bi bi-geo-alt-fill me-2"></i>Pergamino 211, Buenos Aires, Argentina</p>
+                </div>
             </div>
-            <div class="carousel-item">
-                <img src="./Resource/Fotografia2.jpg" class="data-bs-slide w-10" alt="...">
+            <div class="text-center border-top border-secondary pt-3 mt-3">
+                <p class="text-white-50 mb-0">© 2025 Centro de Estudiantes CHN37. Todos los derechos reservados.</p>
             </div>
         </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </header>
-    </div> 
-    
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>

@@ -1,50 +1,307 @@
-body{
-    background-color: rgba(104, 3, 3, 0.735);
+/* Styles/styles.css */
+
+/* General Body and Main Container Styles (from Mano Dura) */
+header{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffea00cc;
+}
+body {
+    font-family: 'ArialBlack', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(24, 141, 1); /* Fondo rojo oscuro de Mano Dura */
+    color: #111; /* Color de texto principal */
+}
+
+main {
+    background-color: #ddd; /* Fondo gris claro para el contenido principal */
+    max-width: 1000px; /* Ancho máximo igual al de Mano Dura */
+    margin: 0 auto;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra intensa */
+}
+
+/* Header Styles (adapted for Bootstrap header) */
+header {
+    background-color: #111; /* Fondo negro como Mano Dura */
+    padding: 20px;
+    text-align: center;
+    color: white; /* Texto blanco */
+}
+
+/* Adjust Bootstrap header elements */
+header h1 {
+    color: white !important; /* Asegura que el título sea blanco */
+    font-size: 2.5rem; /* Ajusta el tamaño del título si es necesario */
+}
+
+header p {
+    color: white !important; /* Asegura que el lema sea blanco */
+    font-size: 1.1rem; /* Ajusta el tamaño del lema */
+}
+
+/* Nav Styles (adapted for Bootstrap Navbar) */
+/* Anulamos algunos estilos de Bootstrap para mantener la estética de Mano Dura */
+.navbar {
+    background-color: #007858cc !important; /* Fondo gris oscuro del nav de Mano Dura */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #1a4805; /* Borde inferior rojo oscuro */
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important; /* Color de texto blanco para los enlaces */
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 15px 20px !important; /* Padding de los enlaces */
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #ce4444 !important; /* Rojo oscuro al hacer hover o para el activo */
+    background-color: rgba(255, 255, 255, 0.1); /* Ligero fondo blanco transparente */
+}
+
+.navbar-toggler {
+    color: white !important; /* Color del ícono del toggler */
+    border-color: rgba(255, 255, 255, 0.1) !important; /* Color del borde del toggler */
+}
+
+.navbar-toggler-icon {
+    filter: invert(1); /* Hace que el ícono sea blanco */
+}
+
+
+/* Section Spacing (General) */
+section {
+    margin-bottom: 40px;
+    padding: 20px 0; /* Añade un padding general a las secciones para separarlas */
+}
+
+/* Button Styles (from Mano Dura) */
+.btn-primary { /* Sobreescribe el botón primary de Bootstrap */
+    background-color: #8B0000 !important; /* Rojo oscuro para el botón */
+    color: white !important;
+    padding: 10px 20px !important;
+    border: none !important;
+    cursor: pointer !important;
+    font-weight: bold !important;
+    border-radius: 4px !important;
+    transition: background-color 0.3s ease !important;
+}
+
+.btn-primary:hover {
+    background-color: #a30000 !important; /* Rojo un poco más claro al hover */
+}
+
+.btn-outline-primary { /* Para los botones de "Ver Detalles" */
+    color: #8B0000 !important;
+    border-color: #8B0000 !important;
+    transition: all 0.3s ease !important;
+}
+
+.btn-outline-primary:hover {
+    background-color: #8B0000 !important;
+    color: white !important;
+}
+
+
+/* Carousel Styles (from Mano Dura, adapted for Bootstrap structure) */
+/* Bootstrap ya maneja gran parte del carrusel, pero ajustamos colores y bordes */
+#carouselExampleAutoplay {
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+.carousel-img-fixed-height {
+    width: 100%;
+    height: 400px; /* Altura fija para las imágenes del carrusel */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.7) !important; /* Fondo semitransparente oscuro */
+    color: white !important;
+    padding: 15px !important;
+    border-radius: 4px !important;
+    bottom: 20px !important;
+    left: 50% !important; /* Centra el caption */
+    transform: translateX(-50%);
+    width: 80%; /* Ancho del caption */
+}
+
+.carousel-caption h5 { /* h3 en Mano Dura, h5 en Bootstrap caption */
+    margin: 0 0 5px 0 !important;
+    font-size: 1.5rem !important;
+}
+
+.carousel-caption p {
+    margin: 0 !important;
+    font-size: 1rem !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(139, 0, 0, 0.8); /* Rojo oscuro para los botones de control */
+    border-radius: 50%; /* Opcional: redondear los íconos de control */
+    padding: 20px; /* Aumentar el área clicable */
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #bbb !important; /* Color de los puntos inactivos */
+    height: 15px !important;
+    width: 15px !important;
+    border-radius: 50% !important;
+    margin: 0 5px !important;
+    transition: background-color 0.3s ease !important;
+}
+
+.carousel-indicators .active {
+    background-color: #8B0000 !important; /* Rojo oscuro para el punto activo */
+}
+
+
+/* Grid Layouts (Propuestas y Miembros - using Bootstrap's flexbox/grid system) */
+/* Las clases de Bootstrap como .row, .col, .g-4 ya manejan el grid.
+   Solo aplicamos los estilos de las tarjetas. */
+
+.propuesta-card,
+.candidato-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para ambos */
+}
+
+.propuesta-card:hover,
+.candidato-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada al hover */
+}
+
+.propuesta-card h3,
+.candidato-card h3 {
+    color: #8B0000; /* Rojo oscuro para los títulos de las tarjetas */
+    margin-bottom: 10px;
+}
+
+.candidato-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #8B0000; /* Borde rojo oscuro para las imágenes de miembros */
+}
+
+/* Footer Styles (from Mano Dura) */
+footer {
+    background-color: #111; /* Fondo negro */
     color: white;
+    margin-top: 40px;
+    padding: 40px 0 0 0;
 }
-.social-icons a {
-    font-size: 2.5rem; 
-    margin: 0 15px;
-    color: #7b0000;
+
+.footer-content {
+    /* Las clases de Bootstrap .row y .col ya manejan la distribución */
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px; /* Padding para evitar que el contenido toque los bordes en móvil */
+}
+
+.footer-section h5 { /* h3 en Mano Dura, h5 en Bootstrap footer */
+    color: #8B0000; /* Rojo oscuro para los títulos del footer */
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: #ccc; /* Color gris claro para los enlaces */
     text-decoration: none;
-    transition: color 0.3s ease; 
+    transition: color 0.3s ease;
 }
 
-.social-icons a:hover {
-    color: #98fc1d;
+.footer-section ul li a:hover {
+    color: #8B0000; /* Rojo oscuro al hacer hover */
 }
 
-.gallery-img {
-    width: 100%; 
-    height: 250px;
-    object-fit: cover; 
-    border-radius: 8px; 
-    transition: transform 0.3s ease; 
-    transform: scale(1);
+.footer-section p {
+    color: #ccc; /* Color gris claro para los párrafos de contacto */
+    margin: 5px 0;
 }
 
-/* ¡NUEVO! Efecto al pasar el cursor */
-.gallery-img:hover {
-    transform: scale(1.05); /* Agranda la imagen un 5% */
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Sombra más pronunciada al agrandar */
-    z-index: 1; /* Asegura que la imagen agrandada esté por encima de las demás */
-    position: relative; /* Necesario para que z-index funcione */
+.footer-bottom {
+    background-color: #000; /* Fondo negro total */
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    border-top: 2px solid #8B0000; /* Borde superior rojo oscuro */
+    color: #ccc; /* Color para el texto de copyright */
 }
 
-.section-spacing {
-    margin-bottom: 4rem; /* Espacio entre las secciones principales */
+/* Social Media Icons (Footer) */
+.social-icons-footer a {
+    color: white !important; /* Asegura que sean blancos */
+    transition: color 0.3s ease-in-out;
 }
 
-/* Estilos para el logo en la navbar */
-.logito {
-    height: 40px; /* Altura deseada para tu logo */
-    width: auto; /* Mantiene la proporción de la imagen */
-    margin-right: 15px; /* Espacio a la derecha del logo */
-    vertical-align: middle; 
+.social-icons-footer a:hover {
+    color: #8B0000 !important; /* Rojo oscuro al hover */
 }
 
-/* Asegurar que el navbar-brand contenga el logo y texto alineados */
-.navbar-brand {
-    display: flex; /* Usa flexbox para alinear el logo y el texto */
-    align-items: center; /* Centra verticalmente los elementos */
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    main {
+        padding: 10px;
+    }
+    
+    .carousel-img-fixed-height {
+        height: 250px; /* Altura más pequeña en móviles */
+    }
+    
+    .carousel-caption {
+        bottom: 10px !important;
+        left: 10px !important;
+        transform: none !important; /* Desactiva la transformación de centrado */
+        width: auto !important; /* Ancho automático para que el padding funcione bien */
+        right: 10px !important; /* Para que ocupe todo el ancho disponible */
+        font-size: 0.9rem !important; /* Texto más pequeño en móviles */
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.2rem !important; /* Tamaño de título más pequeño */
+    }
+    
+    /* Bootstrap ya maneja el grid de 1 columna con .row-cols-1, así que no es necesario aquí */
+    /* .propuestas-grid, .candidatos-grid { grid-template-columns: 1fr; } */
+    
+    .footer-content {
+        padding: 0 15px;
+    }
+    
+    /* Si tuvieras un iframe de video como la otra página */
+    iframe {
+        width: 100%;
+        height: 250px;
+    }
+}
+
+/* Ajustes para los enlaces de ancla en el menú y footer */
+/* Esto es solo si quieres que el scroll sea suave al hacer clic en enlaces de sección */
+html {
+    scroll-behavior: smooth;
 }

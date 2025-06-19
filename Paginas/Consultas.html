@@ -3,69 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caja de Consultas - Centro De Estudiantes</title>
+    <title>Preguntas Frecuentes - Centro De Estudiantes CHN37</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="../Styles/styles.css">
-    <link rel="icon" href="../Assets/Sin título.png" type="image/png">
+    <link rel="stylesheet" href="../Styles/styles.css"> 
+    <link rel="stylesheet" href="../Styles/preguntas.css"> <link rel="icon" href="../Resource/Sin título.png" type="image/png">
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="container" href="../index.html">
-            <img src="../Assets/Sin título.png" class="logito" alt="Logo Centro de Estudiantes CHN37">
-            <a class="navbar-brand text-white" href="../index.html">
-                BIENVENIDOS AL CENTRO DE ESTUDIANTES 
-                <span class="text-white-50">CHN37</span>
-            </a>
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <header class="bg-primary text-white py-3 text-center">
+        <div class="container d-flex flex-column align-items-center">
+            <img src="../Resource/Sin título.png" alt="Logo Centro de Estudiantes CHN37" class="img-fluid" style="height:100px;">
+            <h1 class="mt-2 mb-1">¡BIENVENIDOS AL CENTRO DE ESTUDIANTES!</h1>
+            <p class="lead mb-0">¡No dudes en hablar con nuestro equipo!</p>
+        </div>
+    </header>
 
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span> Menú
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="./Paginas/Contactos.html">Contactos</a>
+                        <a class="nav-link" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="./Paginas/Consultas.html">Caja de consultas</a>
+                        <a class="nav-link" href="./Contactos.html">Contactos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="./Paginas/miembros.html">Miembros del centro</a>
+                        <a class="nav-link active" aria-current="page" href="./preguntas-frecuentes.html">Preguntas Frecuentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./miembros.html">Miembros del centro</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="container py-5">
-        <h1 class="text-center mb-4">Caja de Consultas</h1>
-        <p class="lead text-center">¡Envíanos tus preguntas, sugerencias o comentarios!</p>
-        
-        <form>
-            <div class="mb-3">
-                <label for="nombre" class="form-label">Nombre completo</label>
-                <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" required>
-            </div>
-            <div class="mb-3">
-                <label for="correo" class="form-label">Correo electrónico</label>
-                <input type="email" class="form-control" id="correo" placeholder="tu@ejemplo.com" required>
-            </div>
-            <div class="mb-3">
-                <label for="asunto" class="form-label">Asunto</label>
-                <input type="text" class="form-control" id="asunto" placeholder="Ej: Sugerencia de evento">
-            </div>
-            <div class="mb-3">
-                <label for="mensaje" class="form-label">Tu mensaje</label>
-                <textarea class="form-control" id="mensaje" rows="5" placeholder="Escribe aquí tu consulta..."></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Enviar Consulta</button>
-        </form>
+    <main class="container my-5">
+        <h1 class="text-center mb-5 display-4">Preguntas Frecuentes</h1>
+        <p class="lead text-center mb-5">Aquí encontrarás respuestas a las dudas más comunes sobre el Centro de Estudiantes.</p>
 
-    </div> 
-    
+        <div class="accordion" id="faqAccordion">
+            
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        ¿Qué es el Centro de Estudiantes CHN37?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Somos una organización formada por alumnos de la institución, cuyo objetivo principal es representar los intereses y necesidades de la comunidad estudiantil ante las autoridades escolares. Buscamos mejorar la experiencia educativa y la vida social dentro de la escuela.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        ¿Cómo puedo unirme al Centro de Estudiantes?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        ¡Nos encanta que estés interesado! Generalmente, abrimos convocatorias para nuevos miembros a principios de cada año lectivo. Te recomendamos estar atento a nuestros anuncios en el pasillo principal, redes sociales y charlas informativas. También podés acercarte a la sala del Centro y hablar con cualquiera de nuestros miembros.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        ¿Qué tipo de actividades organiza el Centro?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Organizamos una amplia variedad de actividades, que incluyen: eventos deportivos (torneos de fútbol, vóley), talleres culturales y artísticos, charlas sobre temas de interés estudiantil, campañas de concientización social, jornadas de integración y proyectos de mejora de infraestructura escolar.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Tengo una sugerencia/queja, ¿cómo la presento?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        ¡Tu opinión es muy importante para nosotros! Podés utilizar nuestro Instagram , enviarnos un correo electrónico a centro.estudiantes.chn37@gmail.com, o acercarte a cualquier miembro del Centro durante los recreos.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        ¿Dónde se encuentra la sala del Centro de Estudiantes?
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Nuestra sala se encuentra en el primer piso, al lado del DOE, un aula equipada con lo necesario para la reuniones. Estamos disponibles para atenderte durante los recreos y en los horarios que anunciamos en nuestras redes sociales.
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+    </main>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-md-auto mb-3">
+                    <h5 class="text-white">Síguenos</h5>
+                    <ul class="list-unstyled d-flex justify-content-center justify-content-md-start social-icons-footer">
+                        <li class="me-3"><a href="https://www.instagram.com/cehn37/" target="_blank" aria-label="Instagram" class="text-white"><i class="bi bi-instagram fs-4"></i></a></li>
+                        <li class="me-3"><a href="https://www.facebook.com/samuel.serrano.313" target="_blank" aria-label="Facebook" class="text-white"><i class="bi bi-facebook fs-4"></i></a></li>
+                        <li class="me-3"><a href="https://x.com/serranoosamuel" target="_blank" aria-label="Twitter/X" class="text-white"><i class="bi bi-twitter-x fs-4"></i></a></li>
+                        <li><a href="https://www.youtube.com/@SerranooSamuel-Gaming" target="_blank" aria-label="YouTube" class="text-white"><i class="bi bi-youtube fs-4"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-auto mb-3 text-md-end">
+                    <h5 class="text-white">Información de Contacto</h5>
+                    <p class="text-white-50 mb-1"><i class="bi bi-envelope-fill me-2"></i>Email: centro.estudiantes.chn37@gmail.com</p>
+                    <p class="text-white-50 mb-1"><i class="bi bi-whatsapp me-2"></i>WhatsApp: +54 9 11 - 6406-9777</p>
+                    <p class="text-white-50 mb-0"><i class="bi bi-geo-alt-fill me-2"></i>Pergamino 211, Buenos Aires, Argentina</p>
+                </div>
+            </div>
+            <div class="text-center border-top border-secondary pt-3 mt-3">
+                <p class="text-white-50 mb-0">© 2025 Centro de Estudiantes CHN37. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>
