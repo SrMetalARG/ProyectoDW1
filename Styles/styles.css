@@ -1,90 +1,85 @@
-/* Styles/styles.css */
-
-/* General Body and Main Container Styles (from Mano Dura) */
-header{
+header {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #ffea00cc;
 }
+
 body {
     font-family: 'ArialBlack', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: rgb(24, 141, 1); /* Fondo rojo oscuro de Mano Dura */
-    color: #111; /* Color de texto principal */
+    background-color: rgb(24, 141, 1);
+    color: #111;
 }
 
 main {
-    background-color: #ddd; /* Fondo gris claro para el contenido principal */
-    max-width: 1000px; /* Ancho máximo igual al de Mano Dura */
+    background-color: #ddd;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 30px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra intensa */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Header Styles (adapted for Bootstrap header) */
+/* Header Styles */
 header {
-    background-color: #111; /* Fondo negro como Mano Dura */
+    background-color: #111;
     padding: 20px;
     text-align: center;
-    color: white; /* Texto blanco */
+    color: white;
 }
 
-/* Adjust Bootstrap header elements */
 header h1 {
-    color: white !important; /* Asegura que el título sea blanco */
-    font-size: 2.5rem; /* Ajusta el tamaño del título si es necesario */
+    color: white !important;
+    font-size: 2.5rem;
 }
 
 header p {
-    color: white !important; /* Asegura que el lema sea blanco */
-    font-size: 1.1rem; /* Ajusta el tamaño del lema */
+    color: white !important;
+    font-size: 1.1rem;
 }
 
-/* Nav Styles (adapted for Bootstrap Navbar) */
-/* Anulamos algunos estilos de Bootstrap para mantener la estética de Mano Dura */
+/* Nav Styles */
 .navbar {
-    background-color: #007858cc !important; /* Fondo gris oscuro del nav de Mano Dura */
+    background-color: #007858cc !important;
     position: sticky;
     top: 0;
     z-index: 1000;
-    border-bottom: 2px solid #1a4805; /* Borde inferior rojo oscuro */
+    border-bottom: 2px solid #1a4805;
 }
 
 .navbar-nav .nav-link {
-    color: #fff !important; /* Color de texto blanco para los enlaces */
+    color: #fff !important;
     font-weight: bold;
     font-size: 1rem;
-    padding: 15px 20px !important; /* Padding de los enlaces */
+    padding: 15px 20px !important;
     transition: all 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
-    color: #ce4444 !important; /* Rojo oscuro al hacer hover o para el activo */
-    background-color: rgba(255, 255, 255, 0.1); /* Ligero fondo blanco transparente */
+    color: #ce4444 !important;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .navbar-toggler {
-    color: white !important; /* Color del ícono del toggler */
-    border-color: rgba(255, 255, 255, 0.1) !important; /* Color del borde del toggler */
+    color: white !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
 }
 
 .navbar-toggler-icon {
-    filter: invert(1); /* Hace que el ícono sea blanco */
+    filter: invert(1);
 }
 
-
-/* Section Spacing (General) */
+/* Section Spacing */
 section {
     margin-bottom: 40px;
-    padding: 20px 0; /* Añade un padding general a las secciones para separarlas */
+    padding: 20px 0;
 }
 
-/* Button Styles (from Mano Dura) */
-.btn-primary { /* Sobreescribe el botón primary de Bootstrap */
-    background-color: #8B0000 !important; /* Rojo oscuro para el botón */
+/* Button Styles */
+.btn-primary {
+    background-color: #8B0000 !important;
     color: white !important;
     padding: 10px 20px !important;
     border: none !important;
@@ -95,10 +90,10 @@ section {
 }
 
 .btn-primary:hover {
-    background-color: #a30000 !important; /* Rojo un poco más claro al hover */
+    background-color: #a30000 !important;
 }
 
-.btn-outline-primary { /* Para los botones de "Ver Detalles" */
+.btn-outline-primary {
     color: #8B0000 !important;
     border-color: #8B0000 !important;
     transition: all 0.3s ease !important;
@@ -109,32 +104,30 @@ section {
     color: white !important;
 }
 
-
-/* Carousel Styles (from Mano Dura, adapted for Bootstrap structure) */
-/* Bootstrap ya maneja gran parte del carrusel, pero ajustamos colores y bordes */
+/* Carousel Styles */
 #carouselExampleAutoplay {
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .carousel-img-fixed-height {
     width: 100%;
-    height: 400px; /* Altura fija para las imágenes del carrusel */
-    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+    height: 400px;
+    object-fit: cover;
 }
 
 .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.7) !important; /* Fondo semitransparente oscuro */
+    background-color: rgba(0, 0, 0, 0.7) !important;
     color: white !important;
     padding: 15px !important;
     border-radius: 4px !important;
     bottom: 20px !important;
-    left: 50% !important; /* Centra el caption */
+    left: 50% !important;
     transform: translateX(-50%);
-    width: 80%; /* Ancho del caption */
+    width: 80%;
 }
 
-.carousel-caption h5 { /* h3 en Mano Dura, h5 en Bootstrap caption */
+.carousel-caption h5 {
     margin: 0 0 5px 0 !important;
     font-size: 1.5rem !important;
 }
@@ -146,13 +139,13 @@ section {
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: rgba(139, 0, 0, 0.8); /* Rojo oscuro para los botones de control */
-    border-radius: 50%; /* Opcional: redondear los íconos de control */
-    padding: 20px; /* Aumentar el área clicable */
+    background-color: rgba(139, 0, 0, 0.8);
+    border-radius: 50%;
+    padding: 20px;
 }
 
 .carousel-indicators [data-bs-target] {
-    background-color: #bbb !important; /* Color de los puntos inactivos */
+    background-color: #bbb !important;
     height: 15px !important;
     width: 15px !important;
     border-radius: 50% !important;
@@ -161,14 +154,10 @@ section {
 }
 
 .carousel-indicators .active {
-    background-color: #8B0000 !important; /* Rojo oscuro para el punto activo */
+    background-color: #8B0000 !important;
 }
 
-
-/* Grid Layouts (Propuestas y Miembros - using Bootstrap's flexbox/grid system) */
-/* Las clases de Bootstrap como .row, .col, .g-4 ya manejan el grid.
-   Solo aplicamos los estilos de las tarjetas. */
-
+/* Grid Layouts */
 .propuesta-card,
 .candidato-card {
     background-color: #fff;
@@ -176,18 +165,18 @@ section {
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para ambos */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .propuesta-card:hover,
 .candidato-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada al hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .propuesta-card h3,
 .candidato-card h3 {
-    color: #8B0000; /* Rojo oscuro para los títulos de las tarjetas */
+    color: #8B0000;
     margin-bottom: 10px;
 }
 
@@ -197,26 +186,25 @@ section {
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 15px;
-    border: 3px solid #8B0000; /* Borde rojo oscuro para las imágenes de miembros */
+    border: 3px solid #8B0000;
 }
 
-/* Footer Styles (from Mano Dura) */
+/* Footer Styles */
 footer {
-    background-color: #111; /* Fondo negro */
+    background-color: #111;
     color: white;
     margin-top: 40px;
     padding: 40px 0 0 0;
 }
 
 .footer-content {
-    /* Las clases de Bootstrap .row y .col ya manejan la distribución */
     max-width: 1000px;
     margin: 0 auto;
-    padding: 0 15px; /* Padding para evitar que el contenido toque los bordes en móvil */
+    padding: 0 15px;
 }
 
-.footer-section h5 { /* h3 en Mano Dura, h5 en Bootstrap footer */
-    color: #8B0000; /* Rojo oscuro para los títulos del footer */
+.footer-section h5 {
+    color: #8B0000;
     margin-bottom: 15px;
 }
 
@@ -230,37 +218,37 @@ footer {
 }
 
 .footer-section ul li a {
-    color: #ccc; /* Color gris claro para los enlaces */
+    color: #ccc;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .footer-section ul li a:hover {
-    color: #8B0000; /* Rojo oscuro al hacer hover */
+    color: #8B0000;
 }
 
 .footer-section p {
-    color: #ccc; /* Color gris claro para los párrafos de contacto */
+    color: #ccc;
     margin: 5px 0;
 }
 
 .footer-bottom {
-    background-color: #000; /* Fondo negro total */
+    background-color: #000;
     text-align: center;
     padding: 15px;
     margin-top: 30px;
-    border-top: 2px solid #8B0000; /* Borde superior rojo oscuro */
-    color: #ccc; /* Color para el texto de copyright */
+    border-top: 2px solid #8B0000;
+    color: #ccc;
 }
 
 /* Social Media Icons (Footer) */
 .social-icons-footer a {
-    color: white !important; /* Asegura que sean blancos */
+    color: white !important;
     transition: color 0.3s ease-in-out;
 }
 
 .social-icons-footer a:hover {
-    color: #8B0000 !important; /* Rojo oscuro al hover */
+    color: #8B0000 !important;
 }
 
 /* Responsive Design Adjustments */
@@ -270,30 +258,26 @@ footer {
     }
     
     .carousel-img-fixed-height {
-        height: 250px; /* Altura más pequeña en móviles */
+        height: 250px;
     }
     
     .carousel-caption {
         bottom: 10px !important;
         left: 10px !important;
-        transform: none !important; /* Desactiva la transformación de centrado */
-        width: auto !important; /* Ancho automático para que el padding funcione bien */
-        right: 10px !important; /* Para que ocupe todo el ancho disponible */
-        font-size: 0.9rem !important; /* Texto más pequeño en móviles */
+        transform: none !important;
+        width: auto !important;
+        right: 10px !important;
+        font-size: 0.9rem !important;
     }
 
     .carousel-caption h5 {
-        font-size: 1.2rem !important; /* Tamaño de título más pequeño */
+        font-size: 1.2rem !important;
     }
-    
-    /* Bootstrap ya maneja el grid de 1 columna con .row-cols-1, así que no es necesario aquí */
-    /* .propuestas-grid, .candidatos-grid { grid-template-columns: 1fr; } */
     
     .footer-content {
         padding: 0 15px;
     }
     
-    /* Si tuvieras un iframe de video como la otra página */
     iframe {
         width: 100%;
         height: 250px;
@@ -301,7 +285,6 @@ footer {
 }
 
 /* Ajustes para los enlaces de ancla en el menú y footer */
-/* Esto es solo si quieres que el scroll sea suave al hacer clic en enlaces de sección */
 html {
     scroll-behavior: smooth;
 }
